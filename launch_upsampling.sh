@@ -5,8 +5,9 @@
 ## Author: Anne-Sophie Denommé-Pichon
 ## Description: script to launch the wrapper to upsample data
 
-READ_ID="@HISEQ2:C88CYACXX:7:1213:21186:56408"
-INPUTFILE="/work/gad/shared/analyse/STR/Data/dijen402/dijen402.R2.fastq"
+READ_ID="@V1:1:HKFJ7DSXX:1:2165:25825:9236/2"
+#READ_ID="@HISEQ2:C88CYACXX:7:1213:21186:56408"
+INPUTFILE="/work/gad/shared/analyse/STR/Data/upsampling/dijen402.R2.newread.fastq"
 SAMPLE="$(basename -s .fastq "$INPUTFILE")"
 OUTPUTDIR="/work/gad/shared/analyse/STR/Data/upsampling"
 COMPUTE_QUEUE="batch"
