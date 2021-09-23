@@ -25,19 +25,19 @@ def upsample(upsampling_read_count, read_id):
             print(plus_line)
             print(quality_line)
             
-            lane = int(title_line.split(':')[2])
+            lane = int(title_line.split(':')[-4])
             if lane > max_lane:
                 max_lane = lane
             
-            tile = int(title_line.split(':')[3])
+            tile = int(title_line.split(':')[-3])
             if tile > max_tile:
                 max_tile = tile
             
-            x = int(title_line.split(':')[4])
+            x = int(title_line.split(':')[-2])
             if x > max_x:
                 max_x = x
 
-            y = str(title_line.split(':')[5])
+            y = str(title_line.split(':')[-1])
 
             if title_line == read_id:
                 title_line_str = title_line
